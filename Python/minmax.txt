@@ -1,0 +1,18 @@
+# Function to find the minimum and maximum in an array
+def find_min_max(arr):
+    if len(arr) == 0:
+        return None, None
+
+    min_num = max_num = arr[0]
+    for num in arr:
+        if num < min_num:
+            min_num = num
+        elif num > max_num:
+            max_num = num
+    return min_num, max_num
+
+# Example usage:
+numbers = [5, 2, 9, 1, 7, 3]
+min_value, max_value = find_min_max(numbers)
+print("Minimum value:", min_value)
+print("Maximum value:", max_value)

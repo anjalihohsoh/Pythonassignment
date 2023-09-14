@@ -1,0 +1,17 @@
+# Create a dictionary of book titles and authors
+books_dict = {
+    "Book1": "Author1",
+    "Book2": "Author2",
+    "Book3": "Author3"
+}
+
+# Add a new book to the dictionary
+books_dict["Book4"] = "Author4"
+
+# Update the author of an existing book
+books_dict["Book2"] = "New Author2"
+
+# Loop through the dictionary and print each book and its author
+print("Books and Authors:")
+for book, author in books_dict.items():
+    print(f"{book}: {author}")

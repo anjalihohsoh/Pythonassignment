@@ -1,0 +1,16 @@
+# Create a tuple of favorite colors
+favorite_colors = ("Red", "Blue", "Green", "Yellow")
+
+# Print the second color (index 1, since indexing starts at 0)
+print("Second Favorite Color:", favorite_colors[1])
+
+# Attempt to modify an element in the tuple (This will raise an error)
+try:
+    favorite_colors[1] = "Purple"
+except TypeError as e:
+    print("Error:", e)
+
+# Loop through the tuple and print each color
+print("Favorite Colors:")
+for color in favorite_colors:
+    print(color)

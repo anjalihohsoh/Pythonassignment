@@ -1,0 +1,9 @@
+
+create table Product(
+id int auto_increment primary key,
+ProdName varchar(50),
+Price int,
+ManuDate date,
+ExpDate date,
+Brand varchar(50)
+);

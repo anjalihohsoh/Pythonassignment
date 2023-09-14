@@ -1,0 +1,16 @@
+# Function to generate the Fibonacci sequence up to n terms
+def generate_fibonacci(n):
+    # Initialize the first two terms of the sequence
+    fibonacci_sequence = [0, 1]
+
+    # Check if the input is less than or equal to 0
+    if n <= 0:
+        return "Fibonacci sequence is not defined for non-positive integers"
+
+    # Check if n is 1, return the first term
+    elif n == 1:
+        return [0]
+
+    # Generate the Fibonacci sequence up to the n-th term
+    else:
+        while len(fibonacci_sequence) < n

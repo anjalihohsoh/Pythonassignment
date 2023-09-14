@@ -1,0 +1,16 @@
+# Create a list of movies
+movies = ["Movie1", "Movie2", "Movie3", "Movie4", "Movie5"]
+
+# Print the third movie (index 2, since indexing starts at 0)
+print("Third Movie:", movies[2])
+
+# Add a new movie to the end of the list
+new_movie = "New Movie"
+movies.append(new_movie)
+
+# Slice the list to create a new list containing the first three movies
+first_three_movies = movies[:3]
+
+# Print the modified list and the new list
+print("Updated List of Movies:", movies)
+print("First Three Movies:", first_three_movies)

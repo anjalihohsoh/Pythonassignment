@@ -1,0 +1,22 @@
+# Function to check if a number is prime
+def is_prime(number):
+    # Check if the number is less than 2
+    if number < 2:
+        return False
+
+    # Iterate from 2 to the square root of the number
+    for i in range(2, int(number**0.5) + 1):
+        # If the number is divisible by any integer in this range, it's not prime
+        if number % i == 0:
+            return False
+
+    # If no divisors were found, the number is prime
+    return True
+
+# Example usage:
+num = 17  # Change this to the number you want to check
+# Check if num is prime and print the result
+if is_prime(num):
+    print(f"{num} is a prime number")
+else:
+    print(f"{num} is not a prime number")

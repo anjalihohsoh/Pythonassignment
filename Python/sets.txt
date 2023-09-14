@@ -1,0 +1,24 @@
+# Create a set of computer languages
+computer_languages = {"Python", "JavaScript", "Java", "C++"}
+
+# Add a new language to the set
+computer_languages.add("Ruby")
+
+# Remove a language from the set
+computer_languages.remove("Java")
+
+# Check if "Python" is in the set
+is_python_in_set = "Python" in computer_languages
+
+# Create a second set of languages
+other_languages = {"JavaScript", "C#", "Python", "Go"}
+
+# Find the intersection of the two sets
+intersection_languages = computer_languages.intersection(other_languages)
+
+# Print the modified set, check result, and intersection
+print("Computer Languages:", computer_languages)
+print("Is Python in the set?", is_python_in_set)
+print("Other Languages:", other_languages)
+print("Intersection of Languages:", intersection_languages)
+

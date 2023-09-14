@@ -1,0 +1,12 @@
+# Function to convert a string to title case
+def to_title_case(input_string):
+    # Use the title() method to convert to title case
+    title_case_string = input_string.title()
+    return title_case_string
+
+# Example usage:
+input_str = "hello world"
+title_case_str = to_title_case(input_str)
+print("Original String:", input_str)
+print("Title Case String:", title_case_str)
+

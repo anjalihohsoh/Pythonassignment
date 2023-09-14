@@ -1,0 +1,24 @@
+# Function to filter elements in an array based on a condition
+def filter_array(arr, condition):
+    # Initialize an empty list to store the filtered elements
+    filtered_arr = []
+
+    # Iterate through each element in the input array
+    for element in arr:
+        # Check if the element satisfies the condition
+        if condition(element):
+            # If it does, add it to the filtered array
+            filtered_arr.append(element)
+
+    # Return the filtered array
+    return filtered_arr
+
+# Example usage:
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Define a condition function that filters even numbers
+def is_even(number):
+    return number % 2 == 0
+
+# Filter the numbers array using the is_even condition
+even_numbers = filter_array(numbers, is_even)
+print("Even numbers:", even_numbers)

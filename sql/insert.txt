@@ -1,0 +1,9 @@
+insert into product(ProdName,
+Price,ManuDate,ExpDate,Brand)values(
+'Grinder','10000',
+'2012-05-12','2024-05-22','philips')
+select * from product;
+insert into employee(first_name,last_name,email,birthdate) values('swati','doi','asd@gmail','2000-07-13');
+update employee set email='ghi@gmail' where id=1;
+delete from product where id=5;
+update product set Prodname='Shoes' where id=5
